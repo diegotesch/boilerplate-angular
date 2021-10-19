@@ -1,0 +1,58 @@
+
+$primaryColor: #36a9ea;
+$darkColor: #434446;
+$branco: #f9fbf9;
+
+.footer {
+  align-items: flex-end;
+  background-color: $primaryColor;
+  color: $branco;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  padding: 0 0 2rem 0;
+
+  &__icons {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    font-size: 2rem;
+    margin: 0 .75rem;
+  }
+
+  &__icon-phone {
+    font-size: 1.7rem;
+  }
+
+  &__link {
+    color: $branco;
+    transition: .3s ease-in-out;
+
+    &:hover {
+      color: $darkColor;
+      font-weight: bold;
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-grow: 1;
+    font-family: 'Open Sans';
+    justify-content: center;
+
+    span {
+      margin-right: .5rem;
+
+      &:not(:last-child):after {
+        content: '|';
+        margin-left: .5rem;
+      }
+
+
+    }
+  }
+}

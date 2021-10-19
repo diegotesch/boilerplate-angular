@@ -1,0 +1,16 @@
+<header class="container-fluid header">
+  <div class="row header__topo">
+    <div class="header__wrap">
+      <div class="col header__topo-logo logo">
+        <figure class="logo__figure">
+          <img class="logo__img" src="/assets/images/logo.png" alt="logo" />
+        </figure>
+
+        <h1 class="logo__title">Diego Tesch</h1>
+      </div>
+      <app-menu-button (openCloseMenu)="state = $event"></app-menu-button>
+    </div>
+  </div>
+</header>
+
+<app-sidebar [menuState]="state"></app-sidebar>

@@ -1,27 +1,32 @@
-# Tesch
+# Boilerplate
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
+Projeto default para iniciar novos projetos
 
-## Development server
+# Production
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## STEP 1
 
-## Code scaffolding
+docker e docker-compose instalados
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## STEP 2
 
-## Build
+execute os comandos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+> $ docker-compose build
 
-## Running unit tests
+> $ docker-compose up -d
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## STEP 3
 
-## Running end-to-end tests
+Abra o navegador e acessa a url
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+> http://localhost:8100
 
-## Further help
+# Development
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> npm i
+
+> npm start
+
+> http://localhost:4200
+

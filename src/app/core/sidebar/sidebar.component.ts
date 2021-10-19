@@ -1,10 +1,10 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-sidebar',
+  templateUrl: './sidebar.component.html',
+  styleUrls: ['./sidebar.component.scss'],
   animations: [
     trigger('openClose', [
       state('open', style({ transform: 'translateX(0)' })),
@@ -13,10 +13,6 @@ import { Component } from '@angular/core';
     ])
   ]
 })
-export class AppComponent {
-  menuState = 'oepn';
-
-  showMenu() {
-    this.menuState = this.menuState === 'close' ? 'open' : 'close';
-  }
+export class SidebarComponent {
+  @Input() menuState = 'close';
 }

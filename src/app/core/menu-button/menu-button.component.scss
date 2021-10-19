@@ -1,0 +1,27 @@
+$darkColor: #434446;
+$branco: #f9fbf9;
+
+.menu {
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 3rem;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    background: $branco;
+    border-radius: 100%;
+
+    .menu__icon {
+        cursor: pointer;
+        color: $darkColor;
+    }
+  }
+
+  &__icon {
+    font-size: 1.7rem;
+    color: $branco;
+  }
+}
