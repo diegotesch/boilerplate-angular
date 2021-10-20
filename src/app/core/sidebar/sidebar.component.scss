@@ -1,6 +1,4 @@
-$primaryColor: #36a9ea;
-$darkColor: #434446;
-$branco: #f9fbf9;
+@import '../../../assets/sass/util';
 
 .sidebar {
   background-color: $primaryColor;
@@ -8,8 +6,20 @@ $branco: #f9fbf9;
   height: 100vh;
   opacity: 0.9;
   position: fixed;
+  z-index: 999;
   top: 0;
-  width: 30%;
+
+  @include for-phone-only {
+    width: 80%;
+  }
+
+  @include for-tablet-only {
+    width: 60%;
+  }
+
+  @include for-desktop-only {
+    width: 30%;
+  }
 
   &__menu {
     padding: .75rem 0;
@@ -35,5 +45,18 @@ $branco: #f9fbf9;
     color: $darkColor;
     text-decoration: none;
     font-family: 'Open Sans';
+
+    @include for-phone-only {
+      font-size: 2.5rem;
+    }
+
+    @include for-tablet-only {
+      font-size: 2rem;
+    }
+
+    @include for-desktop-only {
+      font-size: 1.8rem;
+    }
+
   }
 }

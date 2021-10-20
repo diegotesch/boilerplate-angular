@@ -1,0 +1,38 @@
+@import '../../assets/sass/util';
+
+.sobre {
+  font-family: 'Open Sans';
+
+  &__row {
+    display: flex;
+    flex-direction: row-reverse;
+    background: #b1d06a;
+  }
+
+  &__imagem {
+    background-image: url('/assets/images/me.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    margin: 1rem 4rem;
+  }
+
+  &__texto {
+    margin: 1.5rem 1rem 1.5rem 10rem;
+
+    h2 {
+      color: $darkColor;
+      font-size: 2.75rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      letter-spacing: .05rem;
+      margin: .75rem 0;
+      text-align: justify;
+    }
+  }
+}

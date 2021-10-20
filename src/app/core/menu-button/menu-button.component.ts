@@ -12,7 +12,7 @@ export class MenuButtonComponent {
 
   constructor(private _el: ElementRef) {}
 
-  @HostListener(`document:click`, ['$event'])
+  @HostListener(`click`, ['$event'])
   showMenu(e: Event): void {
     this.menuIsOpen = !this.menuIsOpen;
     this.openCloseMenu.emit(this.menuIsOpen ? 'open' : 'close');
