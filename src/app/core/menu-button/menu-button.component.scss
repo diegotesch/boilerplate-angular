@@ -10,8 +10,8 @@ $branco: #f9fbf9;
   transition: .3s ease-in-out;
 
   @include for-phone-only {
-    height: 5rem;
-    width: 5rem;
+    height: 3rem;
+    width: 4rem;
   }
 
   @include for-tablet-only {
@@ -22,7 +22,7 @@ $branco: #f9fbf9;
   @include for-desktop-only {
     height: 3rem;
     width: 3rem;
-    margin-top: 1rem;
+    margin-right: 1rem;
   }
 
 

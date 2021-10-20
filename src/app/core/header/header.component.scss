@@ -17,12 +17,14 @@
       background-size: 768px 512px;
       width: 768px;
       height: 512px;
+      max-width: 100%;
     }
 
     @include for-tablet-only {
       background-size: 1200px 800px;
       width: 1200px;
       height: 800px;
+      max-width: 100%;
     }
 
     @include for-desktop-only {
@@ -46,6 +48,7 @@
 
   &__top {
     display: flex;
+    justify-content: space-between;
   }
 
   &__bottom {
@@ -57,10 +60,21 @@
   @include no-space;
   display: flex;
 
+  img {
+    @include for-phone-only {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
   &__title {
     font-family: 'Gloria Hallelujah';
     color: $enfasisColor;
     font-size: 4rem;
+
+    @include for-phone-only {
+      font-size: 2.5rem;
+    }
   }
 }
 
